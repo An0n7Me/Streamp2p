@@ -15,23 +15,6 @@ class TreadClient(threading.Thread):
         imageBytes = pickle.dumps(self.arr)
         self.conn.sendall(struct.pack("L", len(imageBytes)) + imageBytes)
 
-        #conn.send(pickle.dumps(frame).encode("utf-8"))
-        #frame = imutils.resize(self.arr,width=320)
-        #a = pickle.dumps(frame)
-        #message = struct.pack("Q",len(a))+a
-        #conn.sendall(message)
-        #while len(self.arr) > 0:
-        #    msg = self.arr[:4096]
-        #    print(msg)
-        #    print(len(msg))
-        #    conn.send(bytes(str(msg), 'utf-8'))
-        #    self.arr = self.arr[4096:]
-        #print("End")
-        #data = self.arr
-        #data = self.conn.send(data)
-        #message = struct.pack("Q",len(a))+a
-        #client_socket.sendall(message)
-
 
 host, port = ("", 5566)
 
