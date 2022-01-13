@@ -1,9 +1,5 @@
-import threading
-import socket
-import record
-import struct
-import pickle
-import imutils
+import threading, socket, record, struct, pickle
+
 
 class TreadClient(threading.Thread):
     def __init__(self, conn, arr):

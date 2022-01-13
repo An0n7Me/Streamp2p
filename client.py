@@ -1,6 +1,4 @@
-import socket
-import numpy as np
-import struct, pickle, cv2, record
+import socket, struct, pickle, cv2, record
 
 
 def Reception(socket):
