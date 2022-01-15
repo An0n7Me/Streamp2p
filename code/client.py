@@ -23,7 +23,7 @@ host = input("Give the host of the streamer")
 if host=="":
     host="localhost"
 port = 8080
-socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+socket   = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socket.connect((host, port))
 
 print("Connected")
